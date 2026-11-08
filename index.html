@@ -6,49 +6,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CyberSafe | Cybersecurity Dashboard</title>
+    <title>CyberSafe | Security Dashboard</title>
+
     <link rel="stylesheet" href="css/style.css">
-<script src="js/script.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <header>
-        <h1>CyberSafe</h1>
-        <p>Your guide to staying safe online.</p>
+        <nav class="navbar">
+            <h1 class="logo">Cyber<span>Safe</span></h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#tools">Security Tools</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <!-- Main Dashboard -->
+    <main id="home">
 
-        <section>
-            <h2>Welcome to CyberSafe</h2>
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <div>
+                <p class="welcome-label">CYBERSECURITY AWARENESS</p>
 
-            <p>
-                Learn about cybersecurity threats,
-                improve your online security knowledge
-                and test your understanding.
-            </p>
+                <h2>Welcome to CyberSafe</h2>
+
+                <p>
+                    Improve your cybersecurity knowledge,
+                    understand online threats and learn
+                    how to protect yourself online.
+                </p>
+            </div>
+
+            <div class="welcome-icon">🛡️</div>
         </section>
 
-        <section>
-            <h2>Explore Cybersecurity</h2>
+        <!-- Overview -->
+        <section id="overview" class="overview">
 
-            <h3>Password Security</h3>
-            <p>Learn how to create secure passwords.</p>
+            <h2>Security Overview</h2>
 
-            <h3>Phishing Awareness</h3>
-            <p>Discover how to recognise suspicious messages.</p>
+            <div class="stats-container">
 
-            <h3>Cybersecurity Quiz</h3>
-            <p>Test your cybersecurity knowledge.</p>
+                <div class="stat-card">
+                    <h3>03</h3>
+                    <p>Learning Modules</p>
+                </div>
 
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>Learning Potential</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>01</h3>
+                    <p>Security Dashboard</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Security Tools -->
+        <section id="tools" class="tools">
+
+            <h2>Explore Security Tools</h2>
+
+            <p class="section-description">
+                Choose an area to develop your cybersecurity skills.
+            </p>
+
+            <div class="tools-container">
+
+                <article class="tool-card">
+                    <div class="tool-icon">🔐</div>
+                    <h3>Password Security</h3>
+                    <p>
+                        Learn how to create stronger passwords
+                        and understand password security.
+                    </p>
+                    <a href="#password">Explore tool →</a>
+                </article>
+
+                <article class="tool-card">
+                    <div class="tool-icon">🎣</div>
+                    <h3>Phishing Awareness</h3>
+                    <p>
+                        Understand phishing attacks and
+                        recognise suspicious messages.
+                    </p>
+                    <a href="#phishing">Explore tool →</a>
+                </article>
+
+                <article class="tool-card">
+                    <div class="tool-icon">🧠</div>
+                    <h3>Knowledge Quiz</h3>
+                    <p>
+                        Test your understanding of
+                        cybersecurity concepts.
+                    </p>
+                    <a href="#quiz">Explore tool →</a>
+                </article>
+
+            </div>
         </section>
 
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>CyberSafe | Educational Cybersecurity Project</p>
+        <p>Built with HTML, CSS and JavaScript</p>
     </footer>
 
 </body>
 </html>
+
