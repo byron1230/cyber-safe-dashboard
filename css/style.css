@@ -225,6 +225,55 @@ footer {
         display: none;
     }
 
+/* Password Security Checker */
+
+.password-section {
+    background-color: #111c30;
+    padding: 30px;
+    border: 1px solid #26364f;
+    border-radius: 12px;
+}
+
+.password-section p {
+    color: #94a3b8;
+}
+
+.password-box {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+.password-box input {
+    padding: 15px;
+    background-color: #0b1120;
+    border: 1px solid #26364f;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+}
+
+.password-box button {
+    padding: 14px;
+    background-color: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.password-box button:hover {
+    background-color: #15803d;
+}
+
+#password-result {
+    font-weight: bold;
+}
+
     .stats-container,
     .tools-container {
         grid-template-columns: 1fr;
