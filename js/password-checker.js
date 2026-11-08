@@ -5,11 +5,20 @@
 
 function checkPassword() {
 
-    // Get the password entered by the user
-    const password = document.getElementById("password").value;
+// Get the password input element
+const passwordInput = document.querySelector("#password");
 
-    // Get the result area
-    const result = document.getElementById("password-result");
+// Get the result area
+const result = document.querySelector("#password-result");
+
+// Check that both HTML elements exist
+if (!passwordInput || !result) {
+    console.error("Password checker HTML elements not found.");
+    return;
+}
+
+// Get the entered password
+const password = passwordInput.value || "";
 
     // Check whether a password has been entered
     if (password.length === 0) {
